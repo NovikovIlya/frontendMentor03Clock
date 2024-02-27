@@ -24,6 +24,7 @@ function App() {
   //вычитание времени текущего от заданного
   const getRemainingTime = () => {
     const targetDate = new Date(2024, 2, 10, 12, 0, 0);
+    //@ts-ignore
     const difference = targetDate - currentTime;
     // console.log(difference)
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
